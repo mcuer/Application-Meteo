@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <EditText
+        android:id="@+id/ville"
+        android:hint="Entrez la ville ici "
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/your_color"
+        android:textCursorDrawable= "@null"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ville">
+        <RadioButton
+            android:id="@+id/fcst_day_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aujourd'hui"
+            android:checked="true"
+            android:layout_below="@id/ville"
+            android:buttonTint="@color/your_color"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/fcst_day_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demain"
+            android:layout_below="@id/fcst_day_0"
+            android:buttonTint="@color/your_color">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/fcst_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jour + 2"
+            android:layout_below="@id/fcst_day_1"
+            android:buttonTint="@color/your_color">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/fcst_day_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jour + 3"
+            android:layout_below="@id/fcst_day_2"
+            android:buttonTint="@color/your_color">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/fcst_day_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jour + 4"
+            android:layout_below="@id/fcst_day_3"
+            android:buttonTint="@color/your_color">
+        </RadioButton>
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyApplication_Meteo</string>
+    <string name="bouton">recherche</string>
+    <string name="retour">Retour</string>
+</resources>
